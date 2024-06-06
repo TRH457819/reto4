@@ -1,5 +1,5 @@
 _base_ = [
-    '../_base_/models/fcn_unet_s5-d16.py', '../_base_/datasets/retotec_dataset.py',
+    '../_base_/models/fastfcn_r50-d32_jpu_psp.py', '../_base_/datasets/retotec_dataset.py',
     '../_base_/default_runtime.py', '../_base_/schedules/schedule_5k.py'
 ]
 crop_size = (512, 1024)
