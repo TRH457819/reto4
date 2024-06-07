@@ -4,6 +4,7 @@ model = dict(
     backbone=dict(
         _delete_=True,
         type='MobileNetV2',
+        with_cp=True,
         widen_factor=1.,
         strides=(1, 2, 2, 1, 1, 1, 1),
         dilations=(1, 1, 1, 2, 2, 4, 4),

@@ -1,6 +1,6 @@
 dataset_type = 'RetoTec'
 data_root = 'data/retotec/'
-crop_size = (512, 512)
+crop_size = (256, 256)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations'),
@@ -39,8 +39,8 @@ tta_pipeline = [
         ])
 ]
 train_dataloader = dict(
-    batch_size=8,
-    num_workers=4,
+    batch_size=32,
+    num_workers=8,
     persistent_workers=True,
     sampler=dict(type='InfiniteSampler', shuffle=True),
     dataset=dict(
