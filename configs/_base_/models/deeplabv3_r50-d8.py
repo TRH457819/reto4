@@ -2,8 +2,8 @@
 norm_cfg = dict(type='SyncBN', requires_grad=True)
 data_preprocessor = dict(
     type='SegDataPreProcessor',
-    mean=[71.89880745004724, 96.53939713760658, 103.4976569588979],
-    std=[1.0402839836486182, 1.1204799855304408, 2.354310757742746],
+    mean=[104.20938983863958, 96.51949998162327, 71.48244633784903],
+    std=[37.50431906433212, 29.372695663205022, 26.88977626469204],
     bgr_to_rgb=True,
     pad_val=0,
     seg_pad_val=255)
