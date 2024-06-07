@@ -4,6 +4,7 @@ model = dict(
     backbone=dict(
         type='ResNeSt',
         stem_channels=128,
+        with_cp=True,
         radix=2,
         reduction_factor=4,
         avg_down_stride=True))
